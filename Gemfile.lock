@@ -65,6 +65,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    bcrypt (3.1.18)
     builder (3.2.4)
     byebug (11.1.3)
     case_transform (0.2)
@@ -94,6 +95,8 @@ GEM
     mini_mime (1.0.3)
     minitest (5.14.4)
     nio4r (2.5.7)
+    nokogiri (1.11.4-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.11.4-x86_64-darwin)
       racc (~> 1.4)
     puma (5.3.1)
@@ -169,11 +172,13 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
+  arm64-darwin-22
   x86_64-darwin-19
   x86_64-darwin-20
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.12)
+  bcrypt (~> 3.1.7)
   byebug
   faker (~> 2.18)
   listen (~> 3.3)

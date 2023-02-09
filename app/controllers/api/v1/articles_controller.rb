@@ -1,4 +1,4 @@
-class ArticlesController < ApplicationController
+class Api::V1::ArticlesController < Api::V1::ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 
   def index
@@ -16,5 +16,6 @@ class ArticlesController < ApplicationController
   def record_not_found
     render json: { error: "Article not found" }, status: :not_found
   end
+
 
 end

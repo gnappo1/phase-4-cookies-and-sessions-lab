@@ -3,6 +3,9 @@ import Article from "./Article";
 import Header from "./Header";
 import Home from "./Home";
 
+// implement context
+// add some functions in there: login, signup, logout
+// add some state
 function App() {
   return (
     <div className="App">
