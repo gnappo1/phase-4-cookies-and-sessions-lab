@@ -16,7 +16,7 @@ function Article() {
 
   useEffect(() => {
     setState(initialState);
-    fetch(`/articles/${id}`).then((r) => {
+    fetch(`/api/v1/articles/${id}`).then((r) => {
       if (r.ok) {
         r.json().then((article) =>
           setState({ article, error: null, status: "resolved" })
